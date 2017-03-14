@@ -1,0 +1,222 @@
+@import "variables";
+@import "mixins";
+
+/* Custom CSS */
+
+body {
+    color: $text-color;
+    background: $body-bg;
+    font-family: $primary-font;
+    font-weight: $regular;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: $letter-spacing;
+    min-height: 500px;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page-header {
+    font-size: 30px;
+    font-weight: 700;
+    border: none;
+    padding-top: 50px;
+    margin: 0 0 20px 0;
+}
+
+.page-header.wsub {
+    margin-bottom: 0;
+}
+
+.page-header.wsub h2 {
+    margin-bottom: 0;
+}
+
+.sub-title {
+    color: $default-hover;
+    font-size: 24px;
+    font-weight: $regular;
+}
+
+.space-top {
+    margin-top: 20px !important;
+}
+
+.space-top-30 {
+    margin-top: 30px !important;
+}
+
+.space-top-2x {
+    margin-top: 40px !important;
+}
+
+.space-bottom {
+    margin-bottom: 20px !important;
+}
+
+.space-bottom-30 {
+    margin-bottom: 30px !important;
+}
+
+.space-bottom-2x {
+    margin-bottom: 40px !important;
+}
+
+.line-height-30 {
+    line-height: 30px !important;
+}
+
+.space-left {
+    padding-left: 15px !important;
+}
+
+.space-left-2x {
+    padding-left: 30px !important;
+}
+
+.space-right-10 {
+    padding-right: 10px !important;
+}
+
+.space-right {
+    padding-right: 15px !important;
+}
+
+.space-right-2x {
+    padding-right: 30px !important;
+}
+
+.space-25 {
+    margin: 12.5px 0;
+    line-height: 0;
+}
+
+.space-50 {
+    margin: 25px 0;
+    line-height: 0;
+}
+
+.space-100 {
+    margin: 50px 0;
+    line-height: 0;
+}
+
+.space-200 {
+    margin: 100px 0;
+    line-height: 0;
+}
+
+.margin-left {
+    margin-left: 15px;
+}
+
+.margin-left-2x {
+    margin-left: 30px;
+}
+
+.margin-right {
+    margin-right: 15px;
+}
+
+.margin-right-2x {
+    margin-right: 30px;
+}
+
+.no-margin {
+    margin: 0 !important
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+
+a:focus {
+    outline: none !important;
+}
+
+.btn:focus {
+    outline: none !important;
+}
+
+.btn-social:focus {
+    outline: none !important;
+}
+
+input:focus {
+    outline: none !important;
+}
+
+.stacked>.col-md-4, .stacked>.col-md-3 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* / End Custom CSS */
+
+@import "typography";
+@import "buttons";
+@import "forms";
+@import "navigations";
+@import "labels-badges-alerts";
+@import "progress-bars";
+@import "tabs-accordions";
+@import "listgroups-panels";
+@import "tables";
+@import "cards";
+@import "sliders";
+@import "pricing-tables";
+@import "sections";
+@import "components";
+@import "media-screens";
+
+@import "use";
+
+/* Demo */
+
+#buttons .btn {
+    margin: 5px 9px;
+}
+
+#buttons .btn-social {
+    margin: 5px 9px;
+}
+
+.sub-title {
+    margin-bottom: 40px;
+}
+
+.btn-group {
+    width: 100%;
+}
+
+.dropdown-buttons .btn-group {
+    width: auto;
+    margin-right: 40px;
+}
+
+.label {
+    margin-right: 15px;
+}
+
+.alert-sm {
+    width: 48.5%;
+    float: left;
+}
+
+/* / End Demo */

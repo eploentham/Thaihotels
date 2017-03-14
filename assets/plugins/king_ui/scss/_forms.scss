@@ -1,0 +1,288 @@
+/* Forms */
+
+.form-control {
+    color: $text-color;
+    background: $bg-color;
+    font-weight: $regular;
+    letter-spacing: $letter-spacing;
+    border: 1px solid $light-grey;
+    border-radius: 0;
+    margin-bottom: 30px;
+    padding: 10px 20px;
+    min-height: 50px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.form-group input {
+    font: normal normal normal 14px/1 FontAwesome, $primary-font;
+}
+
+.input-group input {
+    font: normal normal normal 14px/1 FontAwesome, $primary-font;
+}
+
+/* Contact Forms */
+
+#contactForm .form-control {
+    color: $text-color;
+    background: $bg-color;
+    font-weight: $regular;
+    letter-spacing: $letter-spacing;
+    border: 1px solid $light-grey;
+    border-radius: 0;
+    margin-bottom: 30px;
+    padding: 10px 20px;
+    min-height: 50px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+#contactForm textarea {
+    max-width: 100%;
+    min-height: 130px !important;
+    max-height: 211px;
+    margin-bottom: 30px;
+}
+
+::-webkit-input-placeholder {
+   color: $grey !important;
+}
+
+:-moz-placeholder {
+   color: $grey !important;  
+}
+
+::-moz-placeholder { 
+   color: $grey !important;  
+}
+
+:-ms-input-placeholder {  
+   color: $grey !important;  
+}
+
+.has-error .form-control {
+    color: $danger !important;
+    border: 1px solid $danger !important;
+}
+
+.help-block.with-errors li {
+    color: $danger;
+    font-size: 13px;
+    margin-top: -30px;
+    margin-bottom: 0;
+}
+
+#msgSubmit.h3 {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Contact Form 1 */
+
+#contact-form-1 .form-group {
+    margin-bottom: 0;
+}
+
+#contact-form-1 #contactForm {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#contact-form-1 .btn-form-submit {
+    width: 100%;
+    border-radius: 0;
+    padding: 14px 24px;
+}
+/* / End Contact Form 1 */
+
+
+/* Contact Form 2 */
+
+.contact-form-2 {
+    margin-bottom: 50px;
+}
+
+#contactForm.contact-form-2 .form-control#name {
+    width: 70%;
+}
+
+#contactForm.contact-form-2 .form-control#email {
+    width: 70%;
+}
+
+#contactForm.contact-form-2 .form-control#subject {
+    width: 70%;
+}
+
+#contact-form-2 .form-group {
+    margin-bottom: 0;
+}
+
+#contact-form-2 #contactForm {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#contact-form-2 .btn-form-submit {
+    width: 30%;
+    border-radius: 0;
+    padding: 14px 24px;
+}
+/* / End Contact Form 2 */
+
+/* / End Contact Forms */
+
+
+/* Login / Register Forms */
+
+#login-form {
+    width: 100%;
+    background: $white;
+    border: 1px solid $light-grey;
+    padding: 35px;
+}
+
+#login-form .form-control {
+    color: $text-color;
+    background: $bg-color;
+    font-weight: $regular;
+    letter-spacing: $letter-spacing;
+    border: 1px solid $light-grey;
+    border-radius: 0;
+    margin-bottom: 30px;
+    padding: 10px 20px;
+    min-height: 50px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+#login-form .form-group {
+    margin-bottom: 0;
+}
+
+#login-form .btn-log {
+    border-radius: 0;
+    margin-bottom: 30px;
+    padding-left: 17px;
+    padding-right: 17px;
+}
+
+#register-form {
+    width: 100%;
+    background: $white;
+    border: 1px solid $light-grey;
+    padding: 35px;
+}
+
+#register-form .form-control {
+    color: $text-color;
+    background: $bg-color;
+    font-weight: $regular;
+    letter-spacing: $letter-spacing;
+    border: 1px solid $light-grey;
+    border-radius: 0;
+    margin-bottom: 30px;
+    padding: 10px 20px;
+    min-height: 50px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+#register-form .form-group {
+    margin-bottom: 0;
+}
+
+#register-form .btn-log {
+    border-radius: 0;
+    margin-bottom: 30px;
+    padding-left: 17px;
+    padding-right: 17px;
+}
+
+.log-title {
+    font-size: 24px;
+    margin: 0 0 35px 0;
+}
+
+.log-line {
+    padding: 0 0 35px 0;
+    margin-bottom: 35px;
+}
+
+.log-line .checkbox {
+    margin-left: 10px;
+}
+
+.log-line .checkbox-primary label {
+    color: $default;
+}
+
+.forgot-password {
+    font-size: 16px;
+}
+
+/* / End Login / Register Forms */
+
+
+/* Newsletter Forms */
+
+#newsletter .form-control {
+    color: $text-color;
+    background: $bg-color;
+    font-weight: $regular;
+    letter-spacing: $letter-spacing;
+    border: 1px solid $light-grey;
+    border-radius: 0;
+    margin-bottom: 30px;
+    padding: 10px 20px;
+    min-height: 50px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    z-index: 1;
+}
+
+#newsletter .input-group {
+    width: 100%;
+}
+
+#newsletter .input-group-btn {
+    vertical-align: top;
+}
+
+.btn-newsletter {
+    padding: 14px 24px;
+    margin-left: 20px !important;
+    border-radius: 0;
+    z-index: 2;
+}
+
+#newsletter .btn-newsletter.inside {
+    margin-left: 0 !important;
+}
+
+#newsletter .btn-left.btn-newsletter.inside {
+    margin-left: -108px !important;
+    z-index: 999;
+}
+
+/* / End Newsletter Forms */
+
+/* / End Forms */

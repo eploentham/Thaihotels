@@ -1,0 +1,62 @@
+/* Cards */
+
+.card {
+    position: relative;
+    display: block;
+    margin-bottom: 30px;
+    background-color: $bg-color;
+    border-radius: 0;
+    border: 0;
+    width: 100%;
+}
+
+.card-img-top {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.card-img-inside {
+    margin-bottom: 15px;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card-block {
+    padding: 15px;
+}
+
+.card-title {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.card-text {
+    font-size: 14px;
+}
+
+.card-btn {
+    margin-top: 5px;
+}
+
+.card-2 {
+    position: relative;
+    display: block;
+    margin-bottom: 30px;
+    background-color: $white;
+    border: 1px solid $light-grey;
+    border-radius: 0;
+}
+
+.card-2 .card-text {
+    font-size: 26px;
+    line-height: 1.2;
+}
+
+.card-2 .card-btn {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* / End Cards */

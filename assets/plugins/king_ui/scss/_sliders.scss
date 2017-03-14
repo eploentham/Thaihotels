@@ -1,0 +1,244 @@
+/* Sliders */
+
+#sliders .navbar {
+    margin-bottom: 0;
+}
+
+#sliders .carousel-control.left, #sliders .carousel-control.right {
+    background-image: none !important;
+}
+
+#sliders h3 {
+    font-size: 36px;
+}
+
+#sliders .carousel-caption {
+    text-align: center;
+    height: auto;
+    text-shadow: none !important;
+    top: 0;
+    bottom: 0;
+    padding: 0;
+}
+
+.carousel-control {
+    font-size: 40px;
+    text-shadow: none;
+    background-color: transparent;
+}
+
+.carousel-control .lnr-chevron-left {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    z-index: 5;
+    display: inline-block;
+    margin-top: -10px;
+    float: left;
+}
+
+.carousel-control .lnr-chevron-right {
+    position: absolute;
+    top: 50%;
+    right: 15%;
+    z-index: 5;
+    display: inline-block;
+    margin-top: -10px;
+}
+
+#sliders .slider-content {
+    padding: 15% 0;
+}
+
+.slide-content .slide-title span {
+    margin-bottom: 15px;
+}
+
+.slider-content .slide-text {
+    margin-top: 15px;
+}
+
+.slider-content .btn {
+    margin: 15px;
+}
+
+/* Light Slider */
+
+#light-slider .item {
+    min-height: 555px;
+    height: auto;
+}
+
+#light-slider .slide1 {
+    background-image: url("../images/light-bg-image.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-position: contain;
+}
+
+#light-slider .slide2 {
+    background-image: url("../images/light-bg-image.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+#light-slider .slide-text {
+    color: $title-color;
+    line-height: 1.5;
+}
+
+#light-slider p.caption {
+    padding: 6px;
+    color: $title-color;
+}
+
+#light-slider .carousel-control {
+    color: $title-color;
+    opacity: 0.8;
+}
+
+/* / Light Sliders */
+
+/* Dark Slider */
+
+#dark-slider .item {
+    min-height: 555px;
+    height: auto;
+}
+
+#dark-slider .slide1 {
+    background-image: url("../images/dark-bg-image.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-position: contain;
+}
+
+#dark-slider .slide2 {
+    background-image: url("../images/dark-bg-image.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+#dark-slider h3 {
+    color: $grey;
+}
+
+#dark-slider .slide-text {
+    color: $grey;
+    line-height: 1.5;
+}
+
+#dark-slider p.caption {
+    color: $white;
+    padding: 6px;
+}
+
+#dark-slider .carousel-control {
+    color: $grey;
+    opacity: 0.8;
+}
+
+/* / Dark Slider */
+
+/* Carousels */
+
+.owl-theme .owl-controls .owl-page span {
+    width: 12px !important;
+    height: 12px !important;
+    margin: 5px !important;
+    background: $primary !important;
+}
+
+#cards-carousel .card-block {
+    margin: 0 10px;
+    background: $bg-color;
+}
+
+#cards-carousel .card {
+    background: transparent;
+    margin-bottom: 0;
+}
+
+#image-carousel .item{
+    margin: 10px;
+}
+    
+#image-carousel .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* / End Carousels */
+
+/* Testimonials Slider */
+
+#testimonials-slider {
+    background-color: $grey;
+}
+
+#testimonials-slider .testimonial {
+    padding: 150px 0;
+    text-align: center;
+}
+
+#testimonials-slider .testimonial i {
+    color: $white;
+    font-size: 38px;
+    margin-bottom: 40px;
+}
+
+.testimonial img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    margin-top: -40px;
+    margin-bottom: 40px;
+}
+
+#testimonials-slider .testimonial h3 {
+    color: $white;
+    font-size: 30px;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    max-width: 900px;
+}
+
+.customer-name {
+    color: $white;
+    font-size: 16px;
+    font-weight: $regular;
+}
+
+#testimonials-slider .carousel-indicators {
+    margin-bottom: 10px;
+}
+
+.carousel-indicators .active {
+    width: 12px;
+    height: 12px;
+    background-color: $white;
+    margin: 3px;
+    opacity: 1;
+}
+
+.carousel-indicators li {
+    width: 12px;
+    height: 12px;
+    margin: 3px;
+    background-color: $white;
+    border: 0;
+    opacity: 0.5;
+}
+
+/* / End Testimonials Slider */
+
+/* / Sliders */

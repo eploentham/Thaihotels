@@ -1,0 +1,102 @@
+/* Pricing */
+
+.pricing-table {
+    background: $bg-color;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.pricing-table ul, .pricing-table ol {
+    margin-bottom: 0;
+}
+
+.pricing-title {
+    color: $white;
+    background-color: $default;
+    font-size: 18px;
+    font-weight: $bold;
+    padding: 16px;
+}
+
+.featured .pricing-title {
+    background-color: $primary;
+}
+
+.pricing-table-price {
+    font-weight: $bold;
+    padding: 30px 20px;
+}
+
+.pricing-table-price p {
+    color: $title-color;
+}
+
+.featured .pricing-currency {
+    color: $primary;
+}
+
+.featured .pricing-price {
+    color: $primary;
+}
+
+.pricing-currency {
+    font-size: 18px;
+    font-weight: $bold;
+    vertical-align: 30px;
+}
+
+.pricing-price {
+    font-size: 60px;
+    font-weight: $bold;
+}
+
+.pricing-period {
+    font-weight: $bold;
+}
+
+.pricing-table-content li {
+    margin-bottom: 15px;
+}
+
+.pricing-table-button {
+    padding: 15px 0 35px;
+}
+
+.stacked .pricing-table {
+    -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+}
+
+.stacked .pricing-table {
+    position: relative;
+    z-index: 1;
+}
+
+.stacked .featured.pricing-table {
+    position: relative;
+    z-index: 2;
+    margin-top: -32px;
+}
+
+.stacked .featured .pricing-table-price {
+    padding: 45px 20px;
+}
+
+.stacked .featured .pricing-table-button {
+    padding: 35px 0 55px;
+}
+
+.stacked .col-md-3 .featured.pricing-table {
+    margin-top: -22px;
+}
+
+.stacked .col-md-3 .featured .pricing-table-price {
+    padding: 40px 20px;
+}
+
+.stacked .col-md-3 .featured .pricing-table-button {
+    padding: 25px 0 45px;
+}
+
+/* End Pricing */
