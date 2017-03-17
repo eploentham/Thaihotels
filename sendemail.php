@@ -113,13 +113,38 @@ and open the template in the editor.
             }
             function sendEmail(){
                 $.ajax({
-                    type: 'GET', url: 'gmail.php', contentType: "application/json", dataType: 'text', data: { 'smFileName': $("#smFileName").val()
+                    type: 'GET', url: 'gmail.php', contentType: "application/json", dataType: 'text', 
+                    data: { 'smFileName': $("#smFileName").val()
                         ,'smGroup': $("#smGroup").val(),'smEmailAddress': $("#smEmailAddress").val()
+                        ,'smAltBody': $("#smAltBody").val()
+                        ,'smUser': $("#smUser").val()
                         ,'smSubject': $("#smSubject").val(),'smAttachFile1': $("#smAttachFile1").val()
                         ,'smAttachFile2': $("#smAttachFile2").val(),'smAttachFile3': $("#smAttachFile3").val()}, 
                     success: function (data) {
                         alert('bbbbb '.data);
                         $("#divView").append(data);
+                    },
+                    progress: function(e){
+                        if(e.lengthComputable) {
+                            
+                        }else {
+                            console.warn('Content Length not reported!');
+                        }
+                    },
+                    xhr: function(){
+                        var process = '<?php echo $_SESSION['process']?>';
+                        $("#divView").append(process);
+                        var xhr = new window.XMLHttpRequest();
+                        xhr.addEventListener("progress", function(evt){
+                            if (evt.lengthComputable) {
+                                $("#divView").append(evt.lengthComputable);
+                              var percentComplete = evt.loaded / evt.total;
+                              //Do something with download progress
+                              console.log(percentComplete);
+                              $("#divView").append(percentComplete);
+                            }
+                        }, false);
+                        return xhr;
                     }
                 });
                 
@@ -151,29 +176,42 @@ and open the template in the editor.
         <div class="row">
             <div class="col-sm-6">
               <!-- contact form 2 -->
-              <div id="contact-form-2">
+                <div id="contact-form-2">
                 <form id="contactForm" class="contact-form-2" data-toggle="validator">
-                  <div class="form-group">
-                    <label class="label label-pill label-success-filled">Group </label>
-                        <select class="selectpicker form-control" data-live-search="true" id="smGroup">
-                        </select>
-                    <div class="help-block with-errors"></div>
-                  </div>
-                  <div class="form-group">
-                      <label class="label label-pill label-success-filled">email</label>
-                    <input type="email" class="form-control" id="smEmailAddress" placeholder="Email" required>
-                    <div class="help-block with-errors"></div>
-                  </div>
+                    <div class="form-group">
+                      <label class="label label-pill label-success-filled">User </label>
+                          <select class="selectpicker form-control" data-live-search="true" id="smUser">
+                              <option data-tokens="ketchup mustard" value="info@thaihotels.org.in">info@thaihotels.org.in</option>
+                              <option data-tokens="ketchup mustard" value="marketing@thaihotels.org.in">marketing@thaihotels.org.in</option>
+                          </select>
+                      <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group">
+                      <label class="label label-pill label-success-filled">Group </label>
+                          <select class="selectpicker form-control" data-live-search="true" id="smGroup">
+                          </select>
+                      <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group">
+                        <label class="label label-pill label-success-filled">email</label>
+                      <input type="email" class="form-control" id="smEmailAddress" placeholder="Email" required>
+                      <div class="help-block with-errors"></div>
+                    </div>
                     <div class="form-group">
                         <label class="label label-pill label-success-filled">Subject</label>
-                        <input type="email" class="form-control" id="smSubject" placeholder="Subject" required>
+                        <input type="text" class="form-control" id="smSubject" placeholder="Subject" required>
                         <div class="help-block with-errors"></div>
                     </div>
-                  <div class="form-group">
-                      <label class="label label-pill label-success-filled">File Name email template</label>
-                    <input type="text" class="form-control" id="smFileName" placeholder="File Name email template" required data-error="*Please fill out this field">
-                    <div class="help-block with-errors"></div>
-                  </div>
+                    <div class="form-group">
+                        <label class="label label-pill label-success-filled">Alt Body (Head List Email)</label>
+                        <input type="text" class="form-control" id="smAltBody" placeholder="Head List Email" required>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group">
+                        <label class="label label-pill label-success-filled">File Name email template</label>
+                        <input type="text" class="form-control" id="smFileName" placeholder="File Name email template" required data-error="*Please fill out this field">
+                        <div class="help-block with-errors"></div>
+                    </div>
                 <div class="form-group">
                     <label class="label label-pill label-default-filled">Attach File Name1</label>
                     <input type="text" class="form-control" id="smAttachFile1" placeholder="Attach File Name1" required data-error="*Please fill out this field">
@@ -193,7 +231,7 @@ and open the template in the editor.
                 <div id="msgSubmit" class="h3 text-center hidden"></div>
                 <div class="clearfix"></div>
                 </form>
-              </div><!-- / contact form 2 -->
+                </div><!-- / contact form 2 -->
             </div><!-- / col-sm-6 -->
         </div><!-- / row -->
     </div>
